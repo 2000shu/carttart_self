@@ -1,0 +1,11 @@
+
+services:
+  web:
+    build: .
+    container_name: carttart_web
+    ports:
+      - "8001:8000"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
